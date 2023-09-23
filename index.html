@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Creating Movie List</title>
+  </head>
+  <body>
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+      <div class="container-fluid bg-black mt-0 p-2 fw-bolder">
+        <a class="navbar-brand text-uppercase text-light ps-5" href="#"
+          >MovieBuzz</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon bg-light"></span>
+        </button>
+        <div class="collapse px-5 navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav px-5 ms-auto mb-2 mb-lg-0">
+            <li class="nav-item px-4">
+              <a
+                class="nav-link table-active text-light"
+                aria-current="page"
+                href="#home"
+                >Top-10(2023)</a
+              >
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-light" href="#bestflims">Best Movies</a>
+            </li>
+            <li class="nav-item px-4 dropdown">
+              <a
+                class="nav-link text-light"
+                href="#webseries"
+              >
+                Web Series
+              </a>
+            </li>
+
+            <li class="nav-item px-4">
+              <a class="nav-link text-light"  href="#upcoming">Upcoming Flims</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- carousel -->
+    <div>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/caros 4.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/caros 2.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/caros 3.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://assets-in.bmscdn.com/discovery-catalog/events/et00310832-txbjufukhp-landscape.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/caros 5.webp" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- movie cards -->
+    <main class="bg-primary">
+      <div class="container">
+        <h1 class="text-light text-center pt-5 pb-5" id="home">
+          Top 10 Movies Lists
+        </h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+          <!-- <div class="col-lg-12 col-12">
+        <div class="card border-0" style="width: 15rem;">
+            
+            <img src="https://m.media-amazon.com/images/M/MV5BOGJkNTMyNGEtYTFkNS00MzhhLTk5Y2MtZWNjN2ZiNWNmNjcxXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Viduthalai: Part 1 (2023)</h5>
+              <p class="card-text" >A policeman is conflicted between duty and morality when his department begins a brutal campaign to capture a local activist</p>
+              <a href="#" class="btn btn-secondary">View</a>
+              <a href=""  class="btn btn-dark" target="_blank">Book Now</a>
+            </div>
+          </div>
+          </div> -->
+
+          <a
+            href="https://www.imdb.com/title/tt11396310/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://preview.redd.it/viduthalai-part-1-review-megathread-v0-coxush7vh0ra1.png?auto=webp&s=5ad067a7c32a1062fc9a13fc813cfa14d7f89ed5"
+                alt="Viduthalai part 1"
+                class="img-fluid rounded"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Viduthalai Part 1</h3>
+                <p class="card-text">
+                  Muthuvel Pandian, a stern yet compassionate jailer, sets out
+                  to stop a gang when they try to flee their leader from prison.
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://m.imdb.com/title/tt11663228/?ref_=fn_al_tt_1"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMMqPxYcG32wpbR45WIJlBlrgJXJ3HTYhcQ5kkO_RbzLlHjDKzjWhMeNAQ2ZIkUtKIX9c&usqp=CAU"
+                alt="jailer"
+                class="img-fluid rounded"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Jailer</h3>
+                <p class="card-text">
+                  A policeman is conflicted between duty and morality when his
+                  department begins a brutal campaign to capture a local
+                  activist
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://m.imdb.com/title/tt16211122/?ref_=fn_al_tt_1"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfMskoR13kDUmQFuO95oaOiDjso6pcT3cVbu8I07AKHVIqUq5CSg8DX3ENTiSrd6yb6MY&usqp=CAU"
+                alt="Ayothi"
+                class="img-fluid rounded"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Ayothi</h3>
+                <p class="card-text">
+                  On their journey to Rameswaram, a family from North India gets
+                  involved in a series of mishaps until a stranger decides to
+                  help them out.
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://m.imdb.com/title/tt27542289/?ref_=fn_al_tt_1"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://m.timesofindia.com/thumb.cms?msid=100865937&width=200&height=281"
+                alt="Por Thozhil"
+                class="img-fluid rounded"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Por Thozhil</h3>
+                <p class="card-text">
+                  Por Thozhil is a 2023 Indian Tamil-language crime thriller
+                  film directed by Vignesh Raja. Alfred Prakash and Vignesh Raja
+                  has written the film
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://www.imdb.com/title/tt20242416/?ref_=nv_sr_srsg_0_tt_6_nm_2_q_maamannan"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS40DLXL2YZBsygQ-VE7oXbfmJdMKDUWFV3CkAm0xbbCByeNVYi"
+                alt="Maamannan"
+                class="img-fluid rounded"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Maamannan</h3>
+                <p class="card-text">
+                  A veteran statesman and his son are pulled into a violent power struggle when a cold-blooded political scion pursues a vengeful rise
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://www.imdb.com/title/tt22543326/?ref_=fn_al_tt_1"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMbbMtAXAR9WO4Q8cVFVN8uwPt9y8tcROGzNBSYCwwxnmnmNdP"
+                alt="Maaveeran"
+                class="img-fluid rounded"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Maaveeran</h3>
+                <p class="card-text">
+                  After a head injury, timid newspaper cartoonist Sathya hears a voice narrating his life as an epic tale of heroism and urging him to take on Jeyakodi, a corrupt politician.
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.imdb.com/title/tt22444570/?ref_=fn_al_tt_2"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNP9FwLWnwy44KBWPUoqO0HY_Lq-Zj8hRsDZh7qromsK-wm1Mj"
+                alt="Ponniyin Selvan: Part Two"
+                class="img-fluid rounded"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Ponniyin Selvan: Part Two</h3>
+                <p class="card-text">
+                  Arulmozhi Varman continues on his quest to become Rajaraja I, the greatest ruler of south India's historic Chola empire.
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            href="imdb.com/title/tt25405130/?ref_=fn_al_tt_1"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNjE0OWNlYjEtNTNlNi00MDBkLTg3MDEtYjYxMWE4MWMyYTRmXkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_FMjpg_UX1000_.jpg"
+                alt="DaDa"
+                class="img-fluid rounded"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">DaDa</h3>
+                <p class="card-text">
+                  Dada is a 2023 Indian Tamil-language coming-of-age romantic comedy drama film written and directed by Ganesh K. Babu in his directorial debut
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://www.imdb.com/title/tt11732164/?ref_=fn_al_tt_1"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSo9YjuqkmTNQcH0jFylkjQtaOgajlShITd76dVFJmAce3eeKCl"
+                alt="Pathu Thala"
+                class="img-fluid rounded"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Pathu Thala</h3>
+                <p class="card-text">
+                  AGR is the head of an extremely powerful gang that is also influential in politics. Guna shoots a policeman and takes refuge in AGR's camp.
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://www.imdb.com/title/tt15163652/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_Thunivu"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNP9FwLWnwy44KBWPUoqO0HY_Lq-Zj8hRsDZh7qromsK-wm1Mj"
+                alt="Viduthalai part 1"
+                class="img-fluid rounded"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Thunivu</h3>
+                <p class="card-text">
+                  A criminal mastermind and his team form a plan and commit bank heists across Chennai, but the motive of their heists remains mysterious
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <main class="bg-dark">
+        <div class="container">
+          <h1 class="text-light text-center pt-5 pb-5" id="bestflims">
+            Best Flims Tamil
+          </h1>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+
+            <a
+            href="imdb.com/title/tt15097216/?ref_=nv_sr_srsg_0_tt_5_nm_3_q_jaib"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Jai_Bhim_film_poster.jpg/220px-Jai_Bhim_film_poster.jpg"
+                class="img-fluid rounded"
+                alt="Jai Bhim"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Jai Bhim</h3>
+                <p class="card-text">
+                  A pregnant woman from a primitive tribal community, searches desperately for her husband, who is missing from police custody. A High Court advocate rises in support to find her husband and seek justice for them
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+            <a
+            href="https://www.imdb.com/title/tt4991384/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://static.moviecrow.com/gallery/20160204/81471-CZ8Fo3IWIAE9x9V.jpg"
+                class="img-fluid rounded"
+                alt="Visaranai"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Visaranai</h3>
+                <p class="card-text">
+                  Four labourers are tortured by the police to confess to a theft they have not committed. Just when they feel relieved after being saved by an honest policeman, they find that the worst is yet to come
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+            <a
+            href="https://www.imdb.com/title/tt1496729/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNWZmZTgyNGEtYjY1Ni00OWUwLWJiNDUtNDA4ZjlhNTNmYWRmXkEyXkFqcGdeQXVyMjAzMjcxNTE@._V1_.jpg"
+                class="img-fluid rounded"
+                alt="Aaranya Kaandam"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Aaranya Kaandam</h3>
+                <p class="card-text">
+                  Four labourers are tortured by the police to confess to a theft they have not committed. Just when they feel relieved after being saved by an honest policeman, they find that the worst is yet to come
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+            <a
+            href="https://www.imdb.com/title/tt2152896/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/8/83/Subramaniapuram.jpg"
+                class="img-fluid rounded"
+                alt="Subramaniapuram"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Subramaniapuram</h3>
+                <p class="card-text">
+                  Five fast friends live a carefree life in Madhurai in the '80s. However, their loyalty towards each other is tested when they commit an almost perfect crime but do not manage to get away with it.
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+            <a
+            href="https://www.imdb.com/title/tt1821317/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzX_yt8m3szb6zOvs9g6AAVMbWcOAquBgM3_PNzFRILra_-booJ_hFgm4st-ucqGFHqiI&usqp=CAU"
+                class="img-fluid rounded"
+                alt="Aadukalam"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Aadukalam</h3>
+                <p class="card-text">
+                  Pettaikaaran has an impeccable track record of successes in rooster fights. However, when one of his aides, Karuppu, does not follow his instructions in a fight, it creates enmity between them.
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+            <a
+            href="https://www.imdb.com/title/tt1821317/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://timesofindia.indiatimes.com/photo/61315438.cms"
+                class="img-fluid rounded"
+                alt="Nayakan"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Nayakan</h3>
+                <p class="card-text">
+                  Sakthivel, a young boy, leads a comfortable life until he witnesses his father's brutal murder. Thereafter, he stabs the officer responsible for it and runs away to Mumbai to become a feared gangster
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+            <a
+            href="https://www.imdb.com/title/tt3822388/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://flxt.tmsimg.com/assets/p11106702_v_v10_aa.jpg"
+                class="img-fluid rounded"
+                alt="Madras"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Madras</h3>
+                <p class="card-text">
+                  A wall creates discord between two factions of a political party. Kaali and his friend Anbu, who is a political aspirant, get embroiled in the brutal political rivalry.
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.imdb.com/title/tt0215033/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://m.media-amazon.com/images/S/pv-target-images/f4d67c74f21062cbbf851e45eb8ca1aeeb7f87896ef92d35b189cdf8b0793e9e.jpg"
+                class="img-fluid rounded"
+                alt="Parasakthi"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Parasakthi</h3>
+                <p class="card-text">
+                  Gunasekaran leaves Burma in the midst of World War II in order to return to India and attend his sister's wedding. However, tragedy befalls the family and they must find their place in a new Madras
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+    </main>
+
+    <main class="bg-warning">
+      <div class="container">
+        <h1 class="text-light text-center pt-5 pb-5" id="webseries">
+          Web Series
+        </h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+
+          <a
+            href="https://www.imdb.com/title/tt0944947/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://i.pinimg.com/originals/6b/2f/41/6b2f4114cafe3a3bc0ab845602c3cea6.jpg"
+                class="img-fluid rounded"
+                alt="game of thrones "
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Game of Thrones </h3>
+                <p class="card-text">
+                  Nine noble families wage war against each other in order to gain control over the mythical land of Westeros. Meanwhile, a force is rising after millenniums and threatens the existence of living men.
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://www.imdb.com/title/tt0903747/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://img.betaseries.com/tYhxRqHnq_yk0MmEYCIBOt_gS3Y=/600x900/smart/https%3A%2F%2Fpictures.betaseries.com%2Ffonds%2Fposter%2F287956ed96886a8debc1b42c82a0a828.jpg"
+                class="img-fluid rounded"
+                alt="game of thrones "
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Breaking Bad</h3>
+                <p class="card-text">
+                  Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. His priorities begin to change when he partners with Jesse.
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://www.imdb.com/title/tt2707408/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbU6oe07pF-U6mlvEQBq5_6rvs_w6UssvQJzfDGdQvhSQT74gsaO1qN1GiOBaP8l4bf70&usqp=CAU"
+                alt="Narcos "
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Narcos</h3>
+                <p class="card-text">
+                  Netflix chronicles the rise of the cocaine trade in Colombia and the gripping real-life stories of drug kingpins of the late '80s in this raw, gritty original series. Also detailed are the actions taken by law enforcement as they battle in the war on drugs
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.imdb.com/title/tt2442560/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://i.etsystatic.com/15472631/r/il/3e54f4/3835958374/il_570xN.3835958374_qhmc.jpg"
+                alt="Peaky Blinders "
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Peaky Blinders</h3>
+                <p class="card-text">
+                  Tommy Shelby, a dangerous man, leads the Peaky Blinders, a gang based in Birmingham. Soon, Chester Campbell, an inspector, decides to nab him and put an end to the criminal activities
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+
+
+        </main>   
+    <main class="bg-danger " id="upcoming">
+      <div class="container">
+        <h1 class="text-light text-center pt-5 pb-5" id="webseries">
+          Upcoming Movies
+        </h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+
+          <a
+            href="https://www.imdb.com/title/tt22036406/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMDVjNDI4MTEtODU4OS00OGM0LTk1OTItNTJiMzIwYTA2Nzg2XkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_FMjpg_UX1000_.jpg"
+                class="img-fluid rounded"
+                alt="Kanguva"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Kanguva </h3>
+                <p class="card-text">
+                  Kanguva, also known and marketed as Kanguva: A Mighty Valiant Saga, is an upcoming Indian Tamil-language period action drama film directed by Siva and written by Adi Narayana
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://www.imdb.com/title/tt15654328/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://cdn.123telugu.com/content/wp-content/uploads/2023/09/LEO-6.jpg"
+                class="img-fluid rounded"
+                alt="Leo "
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Leo</h3>
+                <p class="card-text">
+                  Leo is an upcoming Indian Tamil-language action thriller film directed by Lokesh Kanagaraj, who co-wrote it with Rathna Kumar and Deeraj Vaidy. It is the third film in the Lokesh Cinematic Univers
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://www.imdb.com/title/tt18926098/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://thiraiula.com/wp-content/uploads/2023/05/Ajith-2.jpg"
+                alt="VidaaMuyarchi "
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">VidaaMuyarchi</h3>
+                <p class="card-text">
+                  VidaaMuyarchi: Ajith Kumar’s next film with Magizh Thirumeni to feature Sanjay Dutt and Arav as villains
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.imdb.com/title/tt8066940/"
+            class="col text-center mb-5"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <div class="card rounded">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/6/6f/Indian_2_poster.jpg"
+                alt="Indian 2"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Indian 2</h3>
+                <p class="card-text">
+                  Indian 2 is an upcoming Indian Tamil-language vigilante action film written and directed by S. Shankar. A sequel to the 1996 film Indian, the film stars Kamal Haasan who is reprising his role as Senapathy / Indian, an old freedom fighter turned vigilante who fights against corruption and crimes
+                </p>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-danger fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </a>
+
+
+        </main>   
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
